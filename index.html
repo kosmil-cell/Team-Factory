@@ -73,6 +73,7 @@
         a {
             color: #3498db;
             text-decoration: none;
+            overflow-wrap: anywhere;
         }
         
         a:hover {
@@ -133,7 +134,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy for Team Factory</h1>
-        <p class="last-updated"><strong>Last updated:</strong> January 20, 2026</p>
+        <p class="last-updated"><strong>Last updated:</strong> October 19, 2026</p>
         
         <p>This Privacy Policy describes how the Team Factory - Pokémon Builder app ("the App", "we", "our", or "us") handles information when you use it.</p>
         
@@ -147,7 +148,7 @@
         
         <p>We do <strong>not</strong> require you to create an account, sign in, or provide your name, email address, or other contact details to use the App.</p>
         
-        <p>However, some limited data is collected or processed as part of providing core functionality, understanding how the App is used, and improving its stability.</p>
+        <p>However, some limited data is collected or processed as part of providing core functionality, offering optional rewarded videos, understanding how the App is used, and improving its stability.</p>
 
         <h3>1.1. Usage Data (Firebase Analytics)</h3>
         
@@ -160,7 +161,9 @@
             <li>Approximate location (based on IP, where enabled by Google)</li>
             <li>App version and installation information</li>
         </ul>
-        
+
+        <p>Firebase Analytics in the App is configured <strong>not</strong> to collect your device's advertising ID.</p>
+
         <p>We use this data in aggregated form to:</p>
         <ul>
             <li>Understand how users interact with the App</li>
@@ -207,6 +210,49 @@
         
         <p>We do not store or collect copies of your images.</p>
 
+        <h3>1.5. Your Date of Birth</h3>
+
+        <p>When you first open version 1.06.4 or later of the App, it asks for your date of birth <strong>once</strong>. It is used only to decide which ad protections apply to you (see sections 1.6 and 5).</p>
+
+        <ul>
+            <li>Your date of birth is stored <strong>only on your device</strong>, as part of the App's settings.</li>
+            <li>It is <strong>never sent</strong> to us, to Google, to AdMob, to Firebase Analytics, to Crashlytics, or to anyone else.</li>
+            <li>If Android's automatic backup is turned on for your device, it may be included in your device backup to your own Google account, like the App's other settings. This lets a reinstalled App remember your answer.</li>
+            <li>If you have not entered your date of birth, no ads are loaded.</li>
+        </ul>
+
+        <h3>1.6. Rewarded Videos (Google AdMob)</h3>
+
+        <p>Starting with version 1.06.4, the App offers optional <strong>rewarded videos</strong>: if you choose to watch one, you get Premium features for 24 hours. Rewarded videos are served by <strong>Google AdMob</strong>. These are the only ads in the App: it does <strong>not</strong> show banner ads or pop-up (interstitial) ads, and earlier versions of the App contain no ads at all.</p>
+
+        <p>If you have bought Premium, the App does not load any ads.</p>
+
+        <p>To make videos start quickly, the App may load a video in advance in the background, before you tap to watch it. When this happens, Google's Mobile Ads SDK collects the data below, even if you do not watch the video. In the European Economic Area, the United Kingdom, and Switzerland, no video is loaded for adults (18 and over) until they have answered Google's consent message, which appears the first time they tap to watch a video.</p>
+
+        <p>When a video is loaded or shown, Google's Mobile Ads SDK automatically collects and shares the following data for advertising, analytics, and fraud prevention:</p>
+
+        <ul>
+            <li><strong>IP address</strong>, which may be used to estimate the general location of your device</li>
+            <li><strong>Interactions with the App and with ads</strong>, such as app launches, taps, and video views</li>
+            <li><strong>Diagnostic information</strong> about the performance of the App and the SDK, such as app launch time, hang rate, and energy usage</li>
+            <li><strong>Device identifiers</strong>, such as your Android advertising ID and app set ID, and, if applicable, identifiers related to accounts signed in on your device (for users under 16, the advertising ID is not sent; see section 5)</li>
+        </ul>
+
+        <p>This data is encrypted in transit. We do <strong>not</strong> receive this data ourselves; we only see aggregated reports from AdMob, such as how many videos were shown.</p>
+
+        <p>How your ads are handled depends on your age and where you live:</p>
+
+        <ul>
+            <li><strong>Under 16:</strong> you get child treatment, described in section 5. Ads are limited to content rated <strong>G</strong> (suitable for all ages).</li>
+            <li><strong>16 and 17:</strong> ads are never personalized, remarketing is turned off, and Google's ad-serving protections for teens apply. Ads may include content rated up to <strong>PG</strong> (parental guidance). You do not see the consent message or the ad privacy options.</li>
+            <li><strong>18 and over:</strong> ads may be personalized, depending on your choices below. Ads may include content rated up to <strong>PG</strong>.</li>
+            <li><strong>European Economic Area, United Kingdom, and Switzerland (18 and over):</strong> the first time you tap to watch a video, you see Google's consent message. This message does <strong>not</strong> decide whether you can watch videos. It asks whether Google and its ad partners may store or access information on your device and use your data for advertising purposes, such as showing personalized ads and measuring how ads perform. If you do not consent, you can still watch videos, but Google limits how your data is used for them. Google and its partners may rely on <strong>legitimate interest</strong> for some purposes, such as measuring ad performance. You can object to this in the "Manage options" screen of the consent message. You can change your choice at any time (see section 8).</li>
+            <li><strong>US states with privacy laws, such as California (18 and over):</strong> you can opt out of the "sale" or "sharing" of your personal information at any time (see section 8).</li>
+            <li><strong>Elsewhere:</strong> ads for adults may be personalized. You can reset or delete your advertising ID at any time in your device's Android settings.</li>
+        </ul>
+
+        <p>For everyone, categories such as gambling, alcohol, dating, and weight loss are blocked.</p>
+
         <hr>
 
         <h2>2. How We Use the Information</h2>
@@ -218,11 +264,13 @@
             <li>To diagnose crashes and technical issues (Firebase Crashlytics)</li>
             <li>To improve the stability, performance, and user experience of the App</li>
             <li>To understand feature requests and feedback via anonymous suggestions</li>
+            <li>To offer optional rewarded videos (Google AdMob)</li>
+            <li>To decide, on your device only, which ad protections apply to you (your date of birth)</li>
         </ul>
-        
+
         <div class="highlight">
-            <p><strong>We do not sell your data.</strong><br>
-            <strong>We do not use your data for advertising or cross-app tracking.</strong></p>
+            <p><strong>We do not sell your data for money.</strong> However, when personalized ads are shown to adults, Google may use data such as your advertising ID to personalize them. Under some US state privacy laws, this may count as "selling" or "sharing" personal information. You can opt out of this (see section 8).</p>
+            <p><strong>We never use your date of birth, your suggestions, or your images for advertising.</strong></p>
         </div>
 
         <hr>
@@ -248,7 +296,28 @@
             <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
         </ul>
 
-        <h3>3.2. Cloudflare (Content Delivery / Hosting)</h3>
+        <h3>3.2. Google AdMob and Google's Consent Tools</h3>
+
+        <p>We use <strong>Google AdMob</strong>, provided by Google LLC, to show optional rewarded videos.</p>
+
+        <p>We use <strong>Google's User Messaging Platform</strong> for your ad privacy choices:</p>
+
+        <ul>
+            <li>For adults (18 and over) in the European Economic Area, the United Kingdom, and Switzerland, it asks for consent to the use of data for advertising, such as storing information on your device and personalizing ads. It does not decide whether you can watch videos.</li>
+            <li>For adults (18 and over) in certain US states, it lets you opt out of the sale or sharing of your personal information.</li>
+            <li>Users under 18 never see these messages, because their ads are never personalized (see sections 1.6 and 5).</li>
+        </ul>
+
+        <p>Google's consent tools are certified under the IAB Europe Transparency &amp; Consent Framework.</p>
+
+        <p>For more details, please see:</p>
+
+        <ul>
+            <li>How Google uses information from apps that use its services: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">https://policies.google.com/technologies/partner-sites</a></li>
+            <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+        </ul>
+
+        <h3>3.3. Cloudflare (Content Delivery / Hosting)</h3>
         
         <p>We use Cloudflare, Inc. to deliver downloadable content (e.g., files/assets) to your device via a content delivery network (CDN) / hosting. When you download content, Cloudflare may process network and technical data (such as your IP address, user-agent/device and browser information, and request logs) to provide content delivery, performance, and security (e.g., DDoS protection).</p>
         
@@ -262,6 +331,8 @@
         
         <ul>
             <li>Analytics data and crash reports are retained by Firebase for a period determined by their standard policies and settings. We use them to understand usage patterns and fix bugs.</li>
+            <li>Ad-related data is retained by Google according to its own policies.</li>
+            <li>Your date of birth stays on your device until you uninstall the App or clear its data (and in your own device backup, if backup is turned on).</li>
             <li>Anonymous suggestions may be stored for as long as reasonably necessary to review feedback and improve the App.</li>
         </ul>
         
@@ -271,9 +342,25 @@
 
         <h2>5. Children's Privacy</h2>
         
-        <p>The App is <strong>not specifically designed for children</strong>, but it also does not require any personal information or account creation.</p>
-        
-        <p>We do not knowingly collect personal information from children. If you believe that a child has provided us with personal information through suggestions or other means, please contact us so we can remove it.</p>
+        <p>Team Factory is made for a general audience, which includes children. Because of this, we take the following steps:</p>
+
+        <ul>
+            <li><strong>Neutral age question.</strong> When you first open version 1.06.4 or later of the App, it asks for your date of birth, without suggesting any particular answer.</li>
+            <li><strong>Child treatment for everyone under 16.</strong> If you are under 16, every ad request is marked for child treatment. This means:
+                <ul>
+                    <li>No personalized ads and no remarketing</li>
+                    <li>Your advertising ID is <strong>not</strong> sent</li>
+                    <li>Google's ad-serving protections for children are applied</li>
+                    <li>Ads are limited to content rated <strong>G</strong> (suitable for all ages)</li>
+                    <li>Ads come only from Google AdMob, which takes part in Google Play's Families Self-Certified Ads SDK Program</li>
+                </ul>
+            </li>
+            <li><strong>No consent message for users under 18.</strong> Users under 18 are not shown the consent message or the ad privacy options, because their ads are never personalized.</li>
+            <li><strong>Teens aged 16 and 17</strong> never get personalized ads (see section 1.6).</li>
+            <li><strong>Analytics and crash reports</strong> work as described in section 1 and do not collect the advertising ID.</li>
+        </ul>
+
+        <p>We do not ask children for names, email addresses, or other contact details. If you believe that a child has included personal information in a suggestion, please contact us so we can remove it.</p>
 
         <hr>
 
@@ -297,13 +384,19 @@
         
         <p>Since we do not collect contact information or create user accounts, we cannot always identify individual users.</p>
         
-        <p>However, where applicable, you may:</p>
-        
+        <p>However, you can:</p>
+
         <ul>
+            <li><strong>Choose whether to watch rewarded videos.</strong> Ads are only shown when you tap to watch one.</li>
+            <li><strong>Buy Premium,</strong> in which case the App does not load any ads.</li>
+            <li><strong>Change your ad privacy choices at any time.</strong> Adults (18 and over) in the European Economic Area, the United Kingdom, Switzerland, and certain US states see a button in Settings to review or change their consent, or to opt out of the sale or sharing of their personal information. Changes apply right away.</li>
+            <li><strong>Reset or delete your advertising ID</strong> in your device's Android settings.</li>
             <li>Limit certain types of data collection by adjusting device-level settings (for example, ad personalization or analytics settings provided by Google/Android).</li>
             <li>Avoid sending suggestions if you do not wish for any text content to be stored.</li>
         </ul>
-        
+
+        <p>If you live in the European Economic Area, the United Kingdom, or Switzerland, you also have the right to access, correct, or delete your personal data, to object to its processing, to withdraw your consent at any time, and to complain to your local data protection authority.</p>
+
         <p>If you have specific concerns about data related to your use of the App, you can contact us (see Contact section) and we will do our best to help, within what is technically feasible.</p>
 
         <hr>
@@ -340,8 +433,8 @@
         All Pokémon content and intellectual property belong to their respective owners:</p>
         
         <blockquote>
-            Pokémon © 2002–2025 Pokémon.<br>
-            © 1995–2025 Nintendo / Creatures Inc. / GAME FREAK inc.
+            Pokémon © 2002–2026 Pokémon.<br>
+            © 1995–2026 Nintendo / Creatures Inc. / GAME FREAK inc.
         </blockquote>
 
         <hr>
@@ -349,6 +442,8 @@
         <h2>11. Contact Us</h2>
         
         <div class="contact-box">
+            <p>The App is developed by Konstantinos Tsesmelis, who is responsible for the processing of your data described in this policy.</p>
+
             <p>If you have any questions about this Privacy Policy, or want to request deletion of suggestion data (where reasonably possible), you can contact us at:</p>
             
             <p><strong>Email:</strong> <a href="mailto:kntsesmelis@gmail.com">kntsesmelis@gmail.com</a></p>
